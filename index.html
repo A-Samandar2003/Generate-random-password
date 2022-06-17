@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+        integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link rel="stylesheet" href="main.css">
+    <title>vazifa 97</title>
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="block">
+            <div class="title">
+                <h2>Password Generation</h2>
+            </div>
+            <div class="display">
+                <div>
+                    <h5 id="displays">Click Generate</h5>
+                </div>
+
+                <button id="copy"><i class="fa-solid fa-copy fa-2x"></i></button>
+            </div>
+            <p>length:<span id="length-text">8</span> </p>
+            <div class="generate-length">
+                <span>4</span>
+                <input onchange="change()" id="input_length" value="8" type="range" min="4" max="32">
+                <span>32</span>
+            </div>
+            <div class="settings">
+                <span>Settings</span>
+                <div class="upperCase box">
+                    <label for="">Inclodes Uppercase</label>
+                    <input onchange="" id="uppercase" type="checkbox" name="">
+                </div>
+                <div class="lowerCase box">
+                    <label for="">Inclodes Lowecase</label>
+                    <input id="lowercase" type="checkbox" name="">
+                </div>
+                <div class="numbers box">
+                    <label for="">Inclodes Numbers</label>
+                    <input id="numbers" type="checkbox" name="">
+                </div>
+                <div class="symbols box">
+                    <label for="">Inclodes Symbols</label>
+                    <input id="symbols" type="checkbox" name="">
+                </div>
+
+            </div>
+            <div class="btn-box">
+                <button class="btns">Generate Password</button>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
